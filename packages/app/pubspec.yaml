@@ -9,6 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  model:
+    path: '../core/model'
+  ui:
+    path: '../core/ui'
+  count:
+    path: '../feature/count'
+  importer:
+    path: '../importer'
+
 
 dev_dependencies:
   flutter_test:
