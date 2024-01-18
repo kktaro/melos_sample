@@ -3,3 +3,39 @@ packages:
   - "packages/**"
 repository: "https://github.com/kktaro/melos_sample"
 sdkPath: .fvm/flutter_sdk
+scripts:
+  lint: 
+    run: melos run analyze && melos run format_check:lib && melos run format_check:test
+    description: Run all static analysis checks. 
+
+  format:
+    run: melos run format:lib && melos run format:test
+    description: Run format for all files.
+
+  test:
+    run: melos exec --fail-fast -- "flutter test"
+    description: Run test for all packages.
+
+  analyze: 
+    run: melos exec --fail-fast -- "dart analyze ."
+    description: Run `dart analyze .` in all packages.
+
+  format:lib:
+    run: melos exec -- "dart format ./lib"
+    description: Run `dart format ./lib` in all packages.
+
+  format:test:
+    run: melos exec -- "dart format ./test"
+    description: Run `dart format ./test` in all packages.
+
+  format_check:lib: 
+    run: melos exec --fail-fast -- "dart format -o none --set-exit-if-changed ./lib"
+    description: Run `dart format -o none --set-exit-if-changed ./lib` in all packages.
+
+  format_check:test:
+    run: melos exec --fail-fast -- "dart format -o none --set-exit-if-changed ./test"
+    description: Run `dart format -o none --set-exit-if-changed ./test` in all packages.
+
+  build_runner:
+    run: melos exec -- "flutter pub run build_runner build -d"
+    description: Run 'flutter pub run build_runner build -d' in all packages.

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/packages/feature/count/melos_count.iml" filepath="$PROJECT_DIR$/packages/feature/count/melos_count.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/importer/melos_importer.iml" filepath="$PROJECT_DIR$/packages/importer/melos_importer.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/app/melos_melos_sample_app.iml" filepath="$PROJECT_DIR$/packages/app/melos_melos_sample_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/core/model/melos_model.iml" filepath="$PROJECT_DIR$/packages/core/model/melos_model.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/core/ui/melos_ui.iml" filepath="$PROJECT_DIR$/packages/core/ui/melos_ui.iml" />
