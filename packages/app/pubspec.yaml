@@ -16,9 +16,6 @@ dependencies:
     path: '../core/ui'
   count:
     path: '../feature/count'
-  importer:
-    path: '../importer'
-
 
 dev_dependencies:
   flutter_test:

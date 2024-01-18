@@ -10,8 +10,6 @@ dependencies:
     sdk: flutter
   model:
     path: '../../core/model'
-  importer:
-    path: '../../importer'
 
 dev_dependencies:
   flutter_test:

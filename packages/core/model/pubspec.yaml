@@ -7,9 +7,7 @@ environment:
 
 dependencies:
   flutter:
-    sdk: flutter  
-  importer:
-    path: '../../importer'
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
