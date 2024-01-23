@@ -1,4 +1,5 @@
 .dart_tool
+.flutter-plugins-dependencies
 .fvm/flutter_sdk
 pubspec.lock
 pubspec_overrides.yaml
