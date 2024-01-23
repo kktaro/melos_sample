@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CountAppBar extends StatelessWidget {
+class CountAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CountAppBar({
     super.key,
     required this.title,
@@ -14,4 +14,7 @@ class CountAppBar extends StatelessWidget {
       title: Text(title),
     );
   }
+
+  @override
+  Size get preferredSize => const Size(double.infinity, kToolbarHeight);
 }
