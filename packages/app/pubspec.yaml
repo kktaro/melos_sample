@@ -10,7 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.4.9
-  riverpod_annotation: ^2.3.3    
+  riverpod_annotation: ^2.3.3
+  feedback: ^3.0.0
   main:
     path: '../feature/main'
   model:

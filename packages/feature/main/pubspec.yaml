@@ -12,6 +12,7 @@ dependencies:
   freezed_annotation: ^2.4.1
   flutter_riverpod: ^2.4.9
   riverpod_annotation: ^2.3.3  
+  feedback: ^3.0.0
   count:
     path: '../../feature/count'
   model:
