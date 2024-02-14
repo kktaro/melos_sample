@@ -1,3 +1,4 @@
+import 'package:download/download.dart';
 import 'package:feedback/feedback.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -14,8 +15,13 @@ class MainPage extends ConsumerWidget {
     final counter = ref.watch(counterProvider.notifier);
     final countState = ref.watch(counterProvider);
 
+    final downloader = ref.watch(downloaderProvider.notifier);
+
     submitFeedBack() {
-      BetterFeedback.of(context).show((feedback) async {});
+      BetterFeedback.of(context).show((feedback) async {
+        await downloader.downloadImage(feedback.screenshot);
+        await downloader.downlowdText(feedback.text);
+      });
     }
 
     return Scaffold(
