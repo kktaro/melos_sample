@@ -22,10 +22,14 @@ as Json...
     "model",
     "testing"
   ],
+  "download": [
+    "testing"
+  ],
   "main": [
     "count",
     "model",
     "ui",
+    "download",
     "testing"
   ],
   "melos_sample_app": [
