@@ -1,0 +1,42 @@
+digraph packages {
+  size="10"; ratio=fill;
+  count [shape="box"; color="#51960d"];
+  download [shape="box"; color="#f30427"];
+  main [shape="box"; color="#f53a31"];
+  melos_sample_app [shape="box"; color="#d2fcfc"];
+  model [shape="box"; color="#ce6f76"];
+  testing [shape="box"; color="#328e7c"];
+  ui [shape="box"; color="#a623ab"];
+  count -> model [style="filled"; color="#ce6f76"];
+  count -> testing [style="dashed"; color="#328e7c"];
+  download -> testing [style="dashed"; color="#328e7c"];
+  main -> count [style="filled"; color="#51960d"];
+  main -> model [style="filled"; color="#ce6f76"];
+  main -> ui [style="filled"; color="#a623ab"];
+  main -> download [style="filled"; color="#f30427"];
+  main -> testing [style="dashed"; color="#328e7c"];
+  melos_sample_app -> main [style="filled"; color="#f53a31"];
+  melos_sample_app -> model [style="filled"; color="#ce6f76"];
+  melos_sample_app -> ui [style="filled"; color="#a623ab"];
+  melos_sample_app -> count [style="filled"; color="#51960d"];
+  ui -> model [style="filled"; color="#ce6f76"];
+  subgraph "cluster packages/feature" {
+    label="packages/feature";
+    color="#a45375";
+    count;
+    download;
+    main;
+  }
+  subgraph "cluster packages" {
+    label="packages";
+    color="#6b4949";
+    melos_sample_app;
+  }
+  subgraph "cluster packages/core" {
+    label="packages/core";
+    color="#7bbd47";
+    model;
+    testing;
+    ui;
+  }
+}
